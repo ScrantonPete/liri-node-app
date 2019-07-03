@@ -82,7 +82,7 @@ Read more about these methods [here](https://www.npmjs.com/)
 
     ![image of doThis](/assets/do-what-it-says-code.png)
     ![image of doThis](/assets/do-what-it-says-output.png)
-    ![image of doThis](/assets/do-what-it-says-input.png)
+    ![image of doThis](/assets/do-what-it-says-random.png)
 
 ### Developer
 
