@@ -164,7 +164,7 @@ function randomTXT() {
     if (error) {
       return console.log(error);
     }
-    // splitting up information in random.tx file to define variables need to run spotify function
+    // splitting up information in random.tx file to define variables need to run any command function
     var dataArr = data.split(",");
     action = dataArr[0];
     searchString = dataArr[1];
