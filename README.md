@@ -8,19 +8,19 @@ https://scrantonpete.github.io/liri-node-app/
 
 **Commands accepted with expected outputs**
 
-'concert-this'
+**_'concert-this'_**
 
 - This will show you the upcoming concert venue, location, and date based on BandsInTown API
 
-'spotify-this-song'
+**_'spotify-this-song'_**
 
 - This will show you information about the song, such as Band/Artist, Release Year, Album Name, and possibly a song preview from Spotify API
 
-'movie-this'
+**_'movie-this'_**
 
 - This will show you information about the movie, such as Release Year, Rating, Plot and starring Actors from OMDB Movie Database
 
-'do-what-it-says'
+**_'do-what-it-says'_**
 
 - This will show you a Random search from one of the above
 
