@@ -61,7 +61,7 @@ Read more about these methods [here](https://www.npmjs.com/)
 
    _<command, song name>_
 
-   Function takes the userInput (command) and the userQuery(song), and returns the artist, full track name, a preview link and the album.
+   Function takes the userInput (command) and the userQuery(song), and returns the artist, full track name, possibly a preview link, and the album.
 
    ![image of spotify-this-code](/assets/spotify-this-song-code.png)
    ![image of spotify-this-output](/assets/spotify-this-song-output.png)
@@ -69,7 +69,7 @@ Read more about these methods [here](https://www.npmjs.com/)
 3) movie-this
    _<command, movie name>_
 
-   Function takes the userInput (command) and the userQuery(song), and returns title, cast, release date, ratings, country of origin, original language and synopsis.
+   Function takes the userInput (command) and the userQuery(song), and returns title, cast, release date, ratings, country of production, original language and plot.
    ![image of movie-this-code](/assets/movie-this-code.png)
    ![image of movie-this-output](/assets/movie-this-output.png)
 
