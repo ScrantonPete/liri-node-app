@@ -26,23 +26,23 @@ https://scrantonpete.github.io/liri-node-app/
 
 **Before you get started, make sure you have these node packages installed:**
 
-0. **_Command Line: 'npm init -y'_**
+1. **_Command Line: 'npm init -y'_**
 
-1. **Dotenv:** Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
+2. **Dotenv:** Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
 
    _Command Line: 'npm install dotenv'_
 
-1. **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+3. **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
    _Command Line: 'npm install moment'_
 
-1. **Fs:** - a built in node package
+4. **Fs:** - a built in node package
 
-1. **Axios:** - A Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
+5. **Axios:** - A Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
 
    _Command Line: 'npm i axios'_
 
-1. **Spotify:** A simple to use API library for the Spotify REST API.
+6. **Spotify:** A simple to use API library for the Spotify REST API.
 
    _Command Line: 'npm i node-spotify-api'_
 
