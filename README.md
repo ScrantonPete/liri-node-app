@@ -32,15 +32,19 @@ https://scrantonpete.github.io/liri-node-app/
 
    _Command Line: 'npm install dotenv'_
 
-2) **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+1. **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
    _Command Line: 'npm install moment'_
 
-3) **Fs:** - a built in node package
+1. **Fs:** - a built in node package
 
-4) **Axios:** - A Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
+1. **Axios:** - A Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
 
    _Command Line: 'npm i axios'_
+
+1. **Spotify:** A simple to use API library for the Spotify REST API.
+
+   _Command Line: 'npm i node-spotify-api'_
 
 Read more about these methods [here](https://www.npmjs.com/)
 
