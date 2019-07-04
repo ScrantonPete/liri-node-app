@@ -67,6 +67,7 @@ Read more about these methods [here](https://www.npmjs.com/)
    ![image of spotify-this-output](/assets/spotify-this-song-output.png)
 
 3) movie-this
+
    _<command, movie name>_
 
    Function takes the userInput (command) and the userQuery(song), and returns title, cast, release date, ratings, country of production, original language and plot.
