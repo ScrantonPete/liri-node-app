@@ -68,7 +68,7 @@ Read more about these methods [here](https://www.npmjs.com/)
    ![image of spotify-this-code](/assets/spotify-this-song-code.png)
    ![image of spotify-this-output](/assets/spotify-this-song-output.png)
 
-3) movie-this
+3. movie-this
 
    _<command, movie name>_
 
