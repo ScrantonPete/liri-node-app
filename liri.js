@@ -3,13 +3,16 @@ require("dotenv").config();
 // code required to import the `keys.js` file and store it in a variable
 var keys = require("./keys.js");
 
+// required to axios pull search data
+var axios = require("axios");
+
 // required to get data from API search
 var request = require("request");
 
 // required to access the random.txt file
 var fs = require("fs");
 
-// required to access momeny
+// required to access moment
 var moment = require("moment");
 
 // Initiate Spotify API and access keys
@@ -48,42 +51,39 @@ function runLiri() {
 // Search bandsintown API (Sub-function)
 
 function bandSearch(searchString) {
-  if (action === "concert-this") {
-    var artist = "";
-    for (var i = 3; i < process.argv.length; i++) {
-      artist += process.argv[i];
-    }
-    console.log(artist);
-  } else {
-    artist = searchString;
-  }
   // queryURL that will run with id already added
   var queryUrl =
     "https://rest.bandsintown.com/artists/" +
-    artist +
+    searchString +
     "/events?app_id=codingbootcamp";
 
-  request(queryUrl, function(error, response, body) {
-    if (!error && response.statusCode === 200) {
-      var JS = JSON.parse(body);
-      for (i = 0; i < JS.length; i++) {
-        // setting up data in proper moment format
-        var dateForm = moment(JS[i].datetime).format("MM/DD/YYYY");
+  axios
+    .get(queryUrl)
+    .then(function(response) {
+      // testing axios pull
+      // console.log(response);
+      var jsonData = response.data;
+      for (var i = 0; i < response.data.length; i++) {
+        var dateForm = moment(jsonData[i].datetime).format("MM/DD/YYYY");
         console.log("\n==============================\n");
-        // Displaying venue and concert date information
-        console.log("* Name of venue: " + JS[i].venue.name);
-        console.log("* Venue City: " + JS[i].venue.city);
 
-        if (JS[i].venue.region !== "") {
-          console.log("* Venue State: " + JS[i].venue.region);
-        }
-
-        console.log("* Venue Country: " + JS[i].venue.country);
-        console.log("* Date of the Event: " + dateForm);
+        var eventResults = [
+          "* Name of Venue: " + jsonData[i].venue.name,
+          "* Venue Location: " +
+            jsonData[i].venue.city +
+            " " +
+            jsonData[i].venue.region +
+            " " +
+            jsonData[i].venue.country,
+          "* Date of Event: " + dateForm
+        ].join("\n\n");
+        console.log(eventResults);
         console.log("\n==============================\n");
       }
-    }
-  });
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
 }
 
 // Sub-function for Spotify Search
@@ -139,22 +139,24 @@ function searchMovie(searchString) {
     searchMovie +
     "&y=&plot=short&apikey=trilogy";
 
-  request(queryUrl, function(err, res, body) {
-    var bodyOf = JSON.parse(body);
-    if (!err && res.statusCode === 200) {
-      // Displaying movie information
+  axios.get(queryUrl).then(function(response) {
+    var jsonData = response.data;
+    // testing axios pull
+    // console.log(response);
+    console.log("\n==============================\n");
 
-      console.log("\n==============================\n");
-      console.log("* Title of Movie: " + bodyOf.Title);
-      console.log("* Year Movie was Released: " + bodyOf.Year);
-      console.log("* IMDB Rating: " + bodyOf.imdbRating);
-      console.log("* Rotten Tomatoes Rating: " + bodyOf.Ratings[1].Value);
-      console.log("* Production Country: " + bodyOf.Country);
-      console.log("* Language: " + bodyOf.Language);
-      console.log("* Plot: " + bodyOf.Plot);
-      console.log("* Actors: " + bodyOf.Actors);
-      console.log("\n==============================\n");
-    }
+    var movieData = [
+      "* Title of Movie: " + jsonData.Title,
+      "* Year Movie was Released: " + jsonData.Year,
+      "* IMDB Rating: " + jsonData.imdbRating,
+      "* Rotten Tomatoes Rating: " + jsonData.Ratings[1].Value,
+      "* Production Country: " + jsonData.Country,
+      "* Language: " + jsonData.Language,
+      "* Plot: " + jsonData.Plot,
+      "* Actors: " + jsonData.Actors
+    ].join("\n\n");
+    console.log(movieData);
+    console.log("\n==============================\n");
   });
 }
 
