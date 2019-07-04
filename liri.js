@@ -6,9 +6,6 @@ var keys = require("./keys.js");
 // required to axios pull search data
 var axios = require("axios");
 
-// required to get data from API search
-var request = require("request");
-
 // required to access the random.txt file
 var fs = require("fs");
 

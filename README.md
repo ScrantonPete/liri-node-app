@@ -30,17 +30,19 @@ https://scrantonpete.github.io/liri-node-app/
 
    _Command Line: 'npm install dotenv'_
 
-2) **Request:** - Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
-
    _Command Line: 'npm install request'_
 
-3) **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+2) **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
    _Command Line: 'npm install moment'_
 
-4) **Fs:** - a built in node package
+3) **Fs:** - a built in node package
 
    _(npm i request)_
+
+4) **Axios:** - A Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
+
+   _Command Line: 'npm install moment'_
 
 Read more about these methods [here](https://www.npmjs.com/)
 
