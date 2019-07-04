@@ -73,6 +73,7 @@ Read more about these methods [here](https://www.npmjs.com/)
    _<command, movie name>_
 
    Function takes the userInput (command) and the userQuery(song), and returns title, cast, release date, ratings, country of production, original language and plot.
+
    ![image of movie-this-code](/assets/movie-this-code.png)
    ![image of movie-this-output](/assets/movie-this-output.png)
 
