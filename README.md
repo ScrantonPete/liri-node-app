@@ -26,11 +26,11 @@ https://scrantonpete.github.io/liri-node-app/
 
 **Before you get started, make sure you have these node packages installed:**
 
+0. **_Command Line: 'npm init -y'_**
+
 1. **Dotenv:** Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
 
    _Command Line: 'npm install dotenv'_
-
-   _Command Line: 'npm install request'_
 
 2) **Moment:** - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
@@ -38,11 +38,9 @@ https://scrantonpete.github.io/liri-node-app/
 
 3) **Fs:** - a built in node package
 
-   _(npm i request)_
-
 4) **Axios:** - A Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
 
-   _Command Line: 'npm install moment'_
+   _Command Line: 'npm i axios'_
 
 Read more about these methods [here](https://www.npmjs.com/)
 
